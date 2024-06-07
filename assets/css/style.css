@@ -1,0 +1,495 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* NAVBAR */
+
+.navbar {
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  transition: top 0.3s;
+}
+
+.navbar::before {
+  content: "";
+  background-color: skyblue;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.89;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.navbar ul {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  margin-left: auto;
+}
+
+.logo img {
+  width: 50px;
+  height: 50px;
+  padding: 5px;
+  margin-left: 15px;
+}
+
+#menu-icon,
+#close-icon {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 10px;
+}
+
+#menu-icon {
+  position: absolute;
+  right: 20px;
+}
+
+.navbar ul li {
+  list-style: none;
+  font-size: 1.3rem;
+}
+
+.navbar ul li a {
+  display: block;
+  padding: 3px 22px;
+  border-radius: 20px;
+  text-decoration: none;
+}
+
+.navbar ul li a:hover {
+  background-color: #fff;
+  color: rgb(109, 109, 227);
+}
+
+/* HOME SECTION */
+
+.section-one {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 200px;
+  height: 650px;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-one::before {
+  content: "";
+  position: absolute;
+  background: url("../img/bg1.jpg") no-repeat center center/cover;
+  height: 750px;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.89;
+}
+
+.section-one h1,
+p {
+  padding: 10px;
+}
+
+.h-primery {
+  font-family: "Libre Baskerville", serif;
+  color: white;
+  font-size: 2rem;
+}
+
+.section-one p {
+  font-family: "Reddit Mono", monospace;
+  color: black;
+  font-size: 1rem;
+}
+
+.section-one .btn {
+  margin: 10px;
+  padding: 10px;
+  border-radius: 20px;
+  border: 1px solid brown;
+  cursor: pointer;
+}
+
+.section-one .btn:hover {
+  background-color: rgb(212, 152, 152);
+  color: antiquewhite;
+}
+
+/* SECTION_TWO */
+
+.section-two {
+  background-color: #bbaf99;
+  padding: 5px 0px;
+}
+
+.about-box {
+  display: flex;
+}
+
+.about-box .about-me {
+  padding: 34px;
+  border-radius: 28px;
+  background: #e2c7c7;
+  opacity: 0.5;
+  height: 350px;
+  margin: 60px 80px;
+}
+
+.about-box .about-img {
+  margin: 0px 150px;
+}
+
+.about-box .about-img {
+  border: 2px solid brown;
+  padding: 34px;
+  border-radius: 28px;
+  background: #e2c7c7;
+}
+
+.about-img img {
+  border: 2px solid brown;
+  border-radius: 28px;
+  height: 500px;
+  display: block;
+  margin: auto;
+}
+
+.about-me h1 {
+  font-size: 3.5rem;
+}
+
+.about-me p {
+  font-family: "Reddit Mono", monospace;
+}
+
+/* Add responsive styles */
+
+@media (max-width: 768px) {
+  .about-box {
+    flex-direction: column;
+    align-items: center;
+  }
+  .about-box .about-me,
+  .about-box .about-img {
+    margin: 5px;
+    padding: 5px;
+    height: auto;
+    width: 75%;
+  }
+
+  .about-me h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .about-me p {
+    text-align: center;
+    font-size: 2rem;
+  }
+
+  .about-img img {
+    height: auto;
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-me h1 {
+    font-size: 2rem;
+  }
+
+  .about-me p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 1370px) {
+  .about-me p {
+    font-size: 0.8rem;
+  }
+  .about-box .about-me {
+    height: 400px;
+  }
+}
+
+@media (max-width: 1330px) {
+  .about-box .about-me {
+    max-width: 500px;
+    min-width: 170px;
+  }
+
+  .about-me h1 {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 1010px) {
+  .about-box .about-me {
+    padding: 40px 40px;
+    border-radius: 28px;
+    background: #e2c7c7;
+    opacity: 0.5;
+    height: 300px;
+    margin: 65px 30px;
+  }
+
+  .about-box .about-img {
+    padding: 20px;
+    border-radius: 28px;
+    background: #e2c7c7;
+    opacity: 0.5;
+    height: 350px;
+    margin: 60px 40px;
+  }
+
+  .about-box .about-img {
+    border: 2px solid brown;
+    padding: 24px;
+    border-radius: 28px;
+    background: #e2c7c7;
+  }
+
+  .about-img img {
+    border: 2px solid brown;
+    border-radius: 28px;
+    height: 350px;
+    display: block;
+    margin: auto;
+  }
+
+  .about-me h1 {
+    font-size: 3rem;
+  }
+}
+
+/*  SECTION-THREE SERVICES*/
+
+.service {
+  background-color: #efeae3;
+  height: 650px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.service .h-primery {
+  font-size: 3rem;
+  color: black;
+  margin-top: 50px;
+}
+
+.time-table table {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 50px;
+}
+
+.time-table table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.time-table table tr:hover {
+  background-color: #ddd;
+}
+
+.time-table th,
+td {
+  border: 1px solid;
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 20px 80px;
+}
+
+/* SECTION - FOUR ACTIVITIES*/
+
+.activities {
+  background-color: #bbaf99;
+  height: 650px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.activities .h-primery {
+  margin-top: 50px;
+  font-size: 3rem;
+}
+
+.activities p {
+  font-family: "Reddit Mono", monospace;
+}
+
+.activities-img-box {
+  display: flex;
+  margin: 100px;
+}
+
+.activities-img-box .activites-img {
+  margin: 0px 30px;
+  text-align: center;
+  border: 2px solid black;
+  border-radius: 30px;
+  background-color: #b7a78a;
+  border: 1px solid #bfbfbf;
+  box-shadow: 10px 10px 5px #362f2f;
+}
+
+.activites-img img {
+  padding: 15px 15px;
+  width: 200px;
+  height: 200px;
+}
+
+.activites-img .h-primery {
+  font-size: 1rem;
+  margin-top: 0px;
+  margin-bottom: 5px;
+}
+
+.activities-img-box .activites-img:hover {
+  background-color: #b59a69;
+  box-shadow: 10px 10px 5px #a79e9e;
+}
+
+/* SECTION - FIVE TESTIMONY */
+
+.testimony {
+  background-color: #efeae3;
+  height: 650px;
+  display: flex;
+  position: relative;
+}
+
+.testimony img {
+  width: 750px;
+}
+
+.testimony .testimony-message {
+  margin: 50px;
+}
+
+.testimony-message .h-primery {
+  font-size: 3rem;
+  color: black;
+}
+
+.testimony-message p {
+  font-family: "Reddit Mono", monospace;
+}
+
+.form-group {
+  margin: 15px;
+}
+
+.testimony-form form {
+  width: 100%;
+}
+
+.testimony-form {
+  display: flex;
+  align-items: center;
+  padding-bottom: 34px;
+}
+
+.testimony-form input,
+.testimony-form textarea {
+  width: 500px;
+  padding: 0.5rem;
+  border-radius: 9px;
+  font-size: 1.1rem;
+}
+
+.testimony-form form {
+  width: 40%;
+}
+
+.testimony-form label {
+  font-size: 1.3rem;
+  font-family: "Bree Serif", serif;
+}
+
+form .btn {
+  margin-left: 20px;
+  padding: 10px;
+  border-radius: 20px;
+  border: 1px solid brown;
+  cursor: pointer;
+}
+
+/* SECTION - SIX */
+
+.section-six {
+  background-color: #efeae3;
+  height: 650px;
+}
+
+.mySlides {
+  display: none;
+}
+
+.img-slide img {
+  width: 100%;
+  height: 550px;
+}
+
+.section-six .h-primery {
+  color: black;
+  margin: 30px 50px;
+}
+
+/* SECTION DONATION */
+
+/* .donation {
+  background-color: #bbaf99;
+  height: 650px;
+}  */
+
+/* SECTION - SEVEN CONTACT */
+
+.section-seven {
+  height: 650px;
+  background-image: url("../img/contact.jpg");
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+.section-seven .h-primery {
+  margin: 25px;
+  font-size: 3rem;
+}
+
+.section-seven .contact-box {
+  background-color: rgb(223, 209, 209);
+  opacity: 0.53;
+  width: 100%;
+  height: 50%;
+  display: flex;
+}
+
+.contact-box .contact-column {
+  margin: 55px;
+}

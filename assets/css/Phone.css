@@ -1,0 +1,249 @@
+#menu-icon {
+  display: block;
+}
+
+#nav-links {
+  display: none;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  height: 100%;
+  width: 50%;
+  background-color: skyblue;
+  z-index: 1;
+  justify-content: center;
+  align-items: center;
+  box-shadow: -5px 0 5px rgba(0, 0, 0, 0.1);
+  transition: right 0.3s ease;
+}
+
+#nav-links.open #close-icon {
+  display: block;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+#nav-links.open {
+  display: flex;
+}
+
+#nav-links li {
+  margin: 15px 0;
+  width: 100%;
+  text-align: center;
+}
+
+#nav-links li a {
+  font-size: 1.5rem;
+  width: 100%;
+  display: block;
+  padding: 20px 0;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  flex-grow: 1; /* Allow the logo section to grow */
+}
+
+.navbar ul {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  margin-left: auto; /* Push the ul to the right */
+}
+
+/* .navbar ul {
+  margin-left: 100px;
+} */
+
+.logo h1 {
+  font-size: 1.5rem;
+}
+
+/* HOME SECTION */
+
+.section-one {
+  padding: 20px;
+}
+.section-one p {
+  text-align: center;
+}
+
+/* SECTION_TWO */
+
+.about-box .about-me {
+  padding: 40px 40px;
+  border-radius: 28px;
+  background: #e2c7c7;
+  opacity: 0.5;
+  height: 400px;
+  margin: 65px 30px;
+}
+.about-box .about-img {
+  padding: 20px;
+  border-radius: 28px;
+  background: #e2c7c7;
+  opacity: 0.5;
+  height: 350px;
+  margin: 60px 40px;
+}
+
+.about-box .about-img {
+  border: 2px solid brown;
+  padding: 24px;
+  border-radius: 28px;
+  background: #e2c7c7;
+}
+
+.about-img img {
+  border: 2px solid brown;
+  border-radius: 28px;
+  height: 350px;
+  display: block;
+  margin: auto;
+}
+
+.about-me h1 {
+  font-size: 3rem;
+}
+
+/*  SECTION-THREE SERVICES*/
+
+.service .h-primery {
+  font-size: 2rem;
+}
+
+.time-table table {
+  margin-left: 20px;
+  width: 90%;
+}
+
+.time-table th,
+td {
+  border: 1px solid;
+  text-align: left;
+  font-size: 1rem;
+  padding: 15px 15px;
+}
+
+/* SECTION - FOUR ACTIVITIES*/
+
+.activities {
+  height: 100%;
+  text-align: center;
+}
+
+.activities-img-box {
+  display: flex;
+  flex-direction: column;
+  margin: 50px;
+  gap: 50px;
+}
+
+.activites-img img {
+  padding: 15px 15px;
+  width: 300px;
+  height: 300px;
+}
+
+.activities .h-primery {
+  margin-top: 15px;
+  font-size: 3rem;
+}
+
+.activites-img .h-primery {
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+}
+
+/* SECTION - FIVE TESTIMONY */
+
+.testimony {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: -1;
+}
+
+.testimony img {
+  height: 450px;
+  width: 100%;
+}
+
+.testimony-form input,
+.testimony-form textarea {
+  width: 250px;
+  padding: 0.5rem;
+  border-radius: 9px;
+  font-size: 1rem;
+}
+
+/* SECTION - SIX */
+
+.section-six {
+  height: 100%;
+}
+
+.section-six .h-primery {
+  font-size: 1rem;
+  margin: 0px 10px;
+  padding: 0px 10px;
+}
+
+.mySlides {
+  display: none;
+}
+
+.img-slide img {
+  width: 100%;
+  height: 400px;
+}
+
+.section-six .h-primery {
+  color: black;
+  padding: 10px 10px;
+}
+
+/* SECTION - SEVEN CONTACT */
+
+.section-seven {
+  height: 100%;
+  background-image: url("../img/contact.jpg");
+  background-size: cover;
+  background-position: right;
+  z-index: -1;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+.section-seven .h-primery {
+  padding-top: 30px;
+  font-size: 2rem;
+}
+
+.section-seven .contact-box {
+  background-color: rgb(255, 255, 255);
+  opacity: 0.53;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.contact-box .contact-column {
+  margin: 10px;
+}

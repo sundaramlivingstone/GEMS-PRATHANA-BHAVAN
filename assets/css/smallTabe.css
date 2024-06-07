@@ -1,0 +1,73 @@
+.navbar ul {
+  margin-left: 140px;
+}
+
+/* HOME SECTION */
+
+/* SECTION_TWO */
+
+/*  SECTION-THREE SERVICES*/
+
+.time-table th,
+td {
+  border: 1px solid;
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 20px 30px;
+}
+
+/* SECTION - FOUR ACTIVITIES*/
+
+.activities {
+  padding: 35px 0px;
+  height: 550px;
+}
+
+.activities p {
+  text-align: center;
+}
+
+.activities-img-box {
+  margin: 50px;
+}
+
+.activites-img img {
+  padding: 20px 10px;
+  width: 120px;
+  height: 120px;
+}
+.activites-img .h-primery {
+  font-size: 0.8rem;
+  margin-bottom: 15px;
+}
+
+/* SECTION - FIVE TESTIMONY */
+
+.testimony-message .h-primery {
+  font-size: 2rem;
+}
+
+.testimony-message p {
+  font-size: 1em;
+}
+
+.testimony-form input,
+.testimony-form textarea {
+  width: 350px;
+  padding: 0.2rem;
+  border-radius: 9px;
+  font-size: 1.1rem;
+}
+
+/* SECTION - SIX */
+
+.section-six .h-primery {
+  font-size: 2;
+}
+
+/* SECTION - SEVEN CONTACT */
+
+.contact-box .contact-column {
+  margin: 35px;
+  margin-bottom: 15px;
+}
